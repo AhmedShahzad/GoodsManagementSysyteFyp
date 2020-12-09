@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CategoriesDataActivity">
+    <include
+        layout="@layout/toolbarwithnologin"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbar"></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="No Data Found"
+        android:gravity="center"
+        android:textSize="23dp"
+        android:fontFamily="@font/coiny"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintHeight_percent="0.92"
+        android:id="@+id/nodata">
+    </TextView>
+    <ListView
+        android:layout_width="match_parent"
+        app:layout_constraintHeight_percent="0.92"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_height="0dp"
+        android:dividerHeight="5dp"
+        android:id="@+id/categoriesdata">
+    </ListView>
+</androidx.constraintlayout.widget.ConstraintLayout>

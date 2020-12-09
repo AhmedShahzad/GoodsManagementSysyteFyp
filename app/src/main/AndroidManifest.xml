@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fyp.goodsmanagenmentsystem">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+
+
+
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="UnusedAttribute">
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            tools:ignore="WrongManifestParent">
+        </activity>
+        <activity
+            android:name=".EditDealDetails"
+            tools:ignore="WrongManifestParent"
+            android:theme="@style/NoActionbar">
+        </activity>
+        <activity
+            android:name=".Termsandpolicy"
+            tools:ignore="WrongManifestParent"
+            android:theme="@style/NoActionbar" />
+        <activity
+            android:name=".PrivacyPolicy"
+            android:theme="@style/NoActionbar"
+            tools:ignore="WrongManifestParent" />
+        <activity
+            android:name=".MyDeals"
+            android:theme="@style/NoActionbar" />
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/NoActionbar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".CommentsActivity"
+            android:theme="@style/NoActionbar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".CategoriesDataActivity"
+            android:theme="@style/NoActionbar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".Dealdetail"
+            android:theme="@style/NoActionbar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".SplashActivtiy"
+            android:configChanges="uiMode"
+            android:theme="@style/NoActionbar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EnterAddress"
+            android:label="@string/app_name"
+
+            android:theme="@style/NoActionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SignUp"
+            android:label="@string/app_name"
+
+            android:theme="@style/NoActionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/NoActionbar"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+</manifest>

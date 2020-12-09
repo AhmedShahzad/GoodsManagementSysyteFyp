@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#062792</color>
+    <color name="colorPrimaryDark">#062792</color>
+    <color name="colorAccent">#062792</color>
+    <color name="linecolour">#10655D</color>
+    <color name="textcolour">#5A3636</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blackcolour">#212121</color>
+    <color name="buttonbackcolour">#0F82FF</color>
+    <color name="lightblue">#0F82FF</color>
+    <color name="red">#FF3B30</color>
+    <color name="cellbackground">#FEFFFF</color>
+    <color name="homescreentwo">#002BA7</color>
+    <color name="homescreenone">#FFFFFF</color>
+    <color name="backgroundcolor">#F2F2F7</color>
+    <color name="backcolorvote">#F2F2F7</color>g.
+    <color name="datecolour">#0E0000</color>
+    <color name="hanburgcolour">#FFFFFF</color>
+    <color name="black">#0E0000</color>
+    <color name="backprofile">#D7D7E4</color>
+    <color name="green">#2DBA43</color>
+    <color name="commentscolour">#F2F2F6</color>
+    <color name="textcolourtoolbar">#062792</color>
+    <color name="texthint">#B89696</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="backgroundgray">#f2f2f2</color>
+    <color name="darkgray">#AAAAAA</color>
+    <color name="light_gray">#FAF9F9</color>
+    <color name="dark_gray">#c4c4c4</color>
+    <color name="gray">#b6b6b6</color>
+    <color name="whitecolour">#FFFFFF</color>
+<color name="whitecolor">#9A9A9A</color>
+    <color name="navigationheadercolour">#062792</color>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Termsandpolicy">
+    <include
+        layout="@layout/toolbarwithnologin"
+        android:id="@+id/toolbar"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintTop_toTopOf="parent">
+    </include>
+    <WebView
+        android:id="@+id/webview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.92"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="No Internet Found"
+        android:gravity="center"
+        android:textSize="23dp"
+        android:fontFamily="@font/coiny"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintHeight_percent="0.92"
+        android:id="@+id/nodata">
+    </TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>

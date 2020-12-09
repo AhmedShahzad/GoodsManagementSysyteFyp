@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/logo"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/logo" />
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerVertical="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:textColor="@color/white"
+            style="@style/loginHeader"
+            android:text="Login"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+            <EditText
+                android:id="@+id/editTextMobile"
+                android:paddingLeft="10dp"
+                android:hint="e_g 3009090909"
+                android:layout_height="50dp"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:background="@drawable/edtroundbackground"
+                android:maxLines="1"/>
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:hint="Enter password"
+                android:background="@drawable/edtroundbackground"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+        <Button
+            android:id="@+id/btnlogin"
+            style="@style/loginButton"
+            android:layout_height="44dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:text="Login" />
+
+        <TextView
+            android:id="@+id/btn_create_new"
+            style="@style/parent"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Do you want to signup"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:gravity="end" />
+    </LinearLayout>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>
